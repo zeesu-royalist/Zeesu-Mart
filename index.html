@@ -1,0 +1,345 @@
+<!-- This is the dropdown menu for items -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>zeesuMart.com</title>
+    <style>
+        #welcome_part {
+            text-align: center;
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        .menu-icon {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            cursor: pointer;
+        }
+
+        .menu-icon div {
+            width: 30px;
+            height: 2px;
+            background-color: black;
+            margin: 5px 0;
+        }
+
+        nav {
+            display: none;
+            background-color: #F2E5D0;
+            padding: 5px;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 98.8%;
+            text-align: center;
+        }
+
+        nav a {
+            color: #E3E0E0;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 15px;
+        }
+
+        @media (min-width: 600px) {
+            nav {
+                display: block;
+                position: static;
+                text-align: right;
+                margin-right: 20px;
+            }
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            margin: 20px;
+            display: inline-block;
+            width: 200px;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product h3 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .product p {
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        .product .price {
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <style>
+        .landscape-box {
+            position: relative;
+            width: 100%;
+            max-width: 1600px;
+            height: 400px;
+            margin: 0 auto;
+            border: 2px solid #ccc;
+        }
+
+        .landscape-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+            font-size: 48px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .text-overlay p {
+            font-size: 20px;
+            font-weight: normal;
+            margin: 10px 0;
+        }
+
+        .text-overlay input[type="button"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .text-overlay input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+    <div class="landscape-box">
+        <img src="https://plus.unsplash.com/premium_photo-1664202525979-80d1da46b34b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2hvcHxlbnwwfHwwfHx8MA%3D%3D" alt="Shop Image">
+        <div class="text-overlay">
+            Welcome to Zeesu Mart
+            <p>When you have a dream, you've got to grab it and never let go</p>
+            <a href="https://www.google.com/search?q=zeesu+royalist" target="_blank">
+                <input type="button" value="Subscribe">
+            </a>
+        </div>
+    </div>
+</header>
+
+<nav id="menu">
+<button style="position: absolute; left: 20px;">Categories&#x25BC;     </button>
+    <a href="#favourite" style="color:black"> Wishlist </a>
+    <a href="#shoes" style="color:black"> Cart </a>
+    <a href="#accessories" style="color:black"> Help Center </a>
+</nav>
+    <p id="welcome_part">Welcome to my E-commerce website, I hope you're all well</p>
+
+<h2 style="text-align: center;">Clothing Items</h2>
+
+
+<div style="text-align: center; margin-bottom: 20px;">
+    <form action="/search" method="get" style="display: inline-block;">
+        <input type="text" name="searchItem" placeholder="Search products..." 
+               style="padding: 10px; width: 300px; border: 2px solid #ccc; border-radius: 5px;" required>
+        <button type="submit" style="padding: 11px 25px; background-color: #007BFF; color: white; border: none; border-radius: 5px;">Search</button>
+    </form>
+</div>
+
+
+    <div id="products" style="text-align: center;">
+
+        <div class="product" style="background-color: #D4ECD2  ">
+            <img src="https://m.media-amazon.com/images/I/61rO+qs9bzL._AC_SL1500_.jpg">
+            <h3>Sylish Hoodies</h3>
+            <p>Colourfull hoodies with grafity</p>
+            <p class="price">$42.22</P>
+        </div>
+
+        <div class="product" style="background-color: #e6f7ff">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/t-shirt/m/w/6/xl-mpw515-club-york-original-imagtu9c85pazfv7.jpeg?q=90&crop=false" alt="T-shirt">
+            <h3>Stylish T-shirt</h3>
+            <p>Comfortable and trendy T-shirt.</p>
+            <p class="price">$19.99</p>
+        </div>
+
+        <div class="product" style="background-color:#A9CCE3  ">
+            <img src="https://images.meesho.com/images/products/104859916/oadfh_512.jpg">
+            <h3>Blue Jeans</h3>
+            <p>Damage jeans for everyday</p>
+            <p class="price">$39.99</p>
+        </div>
+
+        <div class="product" style="background-color: #E8DAEF">
+            <img src="https://assets.ajio.com/medias/sys_master/root/20240419/mfG5/6621f9f705ac7d77bb185e31/-473Wx593H-466923165-pink-MODEL.jpg" alt="Shoes">
+            <h3>Running Shoes</h3>
+            <p>More Comfortable More relex</p>
+            <p class="price">$34.12</p>
+        </div>
+
+        <div class="product" style="background-color: #CCCCFF">
+            <img src="https://i.etsystatic.com/27976237/r/il/9ba302/3056754973/il_570xN.3056754973_g4gb.jpg" alt="Jacket">
+            <h3>Leather Jacket</h3>
+            <p>Stylish leather jacket for everyone.</p>
+            <p class="price">$99.99</p>
+        </div>
+
+        <div class="product" style="background-color: #E6B0AA">
+            <img src="https://fila.co.in/media/catalog/product/cache/cd70ae4a19cc388bcb53829fc86fd3c3/1/1/11011170_1.jpg" alt="Sneaker">
+            <h3>Sport Sneakers</h3>
+            <p>Comfortable sneakers for sports and leisure.</p>
+            <p class="price">$49.99</p>
+        </div>
+
+        <div class="product" style="background-color: #FCF3CF">
+            <img src="https://skinskisurf.com.au/cdn/shop/files/00qghe_0108-1.webp?v=1695877051" alt="Cap  ">
+            <h3>Surf Cap</h3>
+            <p>Blue Embroidered Sports Cap</p>
+            <p class="price">$12.01</p>
+        </div>
+
+        <div class="product" style="background-color: #D1F2EB  ">
+            <img src="https://assets.ajio.com/medias/sys_master/root/20240630/Jh5F/66819a976f60443f310da3a2/-473Wx593H-700145230-olive-MODEL.jpg" alt="Olive">
+            <h3>Olive embroidered top</h3>
+            <p>long sleeves flared waist</p>
+            <p class="price">$33.54</p>
+        </div>
+    </div>
+          
+<div>
+  <br>
+  <br>
+ <hr>
+        <h1 style="text-align:center;">Best of Festive get 70% off</h1>
+        <p style="text-align:center;">Irresistible deals and unbelievable offers on all products for a limited time
+   <hr>
+     </div>  
+          <br> <br>
+              <div id="products" style="text-align: center;">
+
+        <div class="product" style="background-color: #D4ECD2  ">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/ktaeqvk0/dress/0/x/v/xs-1026-sheetal-associates-original-imag6nztrynt2zuw.jpeg?q=90&crop=false">
+            <h3>Westhood Bodycon</h3>
+            <p>Women Bodycon Black, Purple Dress</p>
+            <p class="price">$52.22</P>
+        </div>
+
+        <div class="product" style="background-color: #e6f7ff">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2022/10/PU/FH/RY/162001345/men-cotton-t-shirt.jpg" alt="T-shirt">
+            <h3>Denim Jacket</h3>
+            <p>Comfortable Solid Denim Jacket</p>
+            <p class="price">$19.99</p>
+        </div>
+
+        <div class="product" style="background-color:#A9CCE3  ">
+            <img src="https://thewillowtree.com/cdn/shop/files/1G7A8624_1080x.jpg?v=1711555149">
+            <h3>Skorts White</h3>
+            <p>Women Solid Skorts White Skirt</p>
+            <p class="price">$39.99</p>
+        </div>
+
+        <div class="product" style="background-color: #E8DAEF">
+            <img src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/20856348/2022/11/30/096b031a-0113-4f84-b8f1-e715a30a1a661669782260427-Berrylush-Women-Black-Geometric-Print-High-Rise-Midi-Skirt-5-1.jpg" alt="Shoes">
+            <h3>Printed Pencil</h3>
+            <p>Women Printed Pencil Black Skirt</p>
+            <p class="price">$24.12</p>
+        </div>
+
+        <div class="product" style="background-color: #CCCCFF">
+            <img src="https://images-static.nykaa.com/media/catalog/product/1/2/12afc4bDRTE_40_4.jpg?tr=w-500" alt="Jacket">
+            <h3>Printed Kurta</h3>
+            <p>Printed Blend Straight Kurta</p>
+            <p class="price">$39.99</p>
+        </div>
+
+        <div class="product" style="background-color: #E6B0AA">
+     <img src="https://5.imimg.com/data5/ANDROID/Default/2021/12/RS/LO/UU/19051907/product-jpeg.jpg" alt="Sneaker">
+            <h3>Jordan shoes</h3>
+            <p>A Most demanded Jordan shoes</p>
+            <p class="price">$99.99</p>
+        </div>
+
+        <div class="product" style="background-color: #FCF3CF">
+            <img src="https://assets.ajio.com/medias/sys_master/root/20240313/NeYP/65f19a9705ac7d77bbb03707/-1117Wx1400H-469349547-blue-MODEL.jpg" alt="Cap  ">
+            <h3>Mid Rise Jeans</h3>
+            <p>Men Regular Mid Rise Blue Jeans</p>
+            <p class="price">$52.01</p>
+        </div>
+
+        <div class="product" style="background-color: #D1F2EB  ">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/l09w8sw0/dress/p/h/r/l-dl-dress-03-l-38-berlin-club-original-imagc3dyumzzggum.jpeg?q=90&crop=false" alt="Olive">
+            <h3>Women fit dress</h3>
+            <p>Berlin Club Flare Multicolor Dress</p>
+            <p class="price">$33.54</p>
+        </div>
+    </div>
+          
+<div>
+          
+          
+          
+    <footer style="background-color: #212F3D; color: white; padding: 20px; text-align: center; margin-top: 30px;">
+        <div style="margin-bottom: 20px;">
+            <h3 style="color:white;">Thank you so much for visiting</h3>
+        </div>
+      
+        <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+          
+          
+            <div style="flex: 1; margin: 10px;">
+                <h4 style="color:white">Navigation</h4>
+                <a href="#home" style="color: #D3D3D3; text-decoration: none;">Home</a><br>
+               <a href="#about" style="color: #D3D3D3; text-decoration: none;">About</a><br>
+               <a href="#contact" style="color: #D3D3D3; text-decoration: none;">Contact</a>
+            </div>
+              
+              
+            <div style="flex: 1; margin: 10px;">
+                <h4>Social Links</h4>
+                <a href="https://wa.me/message/EERUGRMFY7U4M1" target="blank" style="color: #D3D3D3; text-decoration: none;">WhatsApp</a><br>
+                <a href="https://www.instagram.com/zeesu_royalist?igshid=1aq12r21i81r1" target="blank" style="color: #D3D3D3; text-decoration: none;">Instagram</a><br>
+                <a href="https://www.youtube.com/@zeesu_royalist" target="blank" style="color: #D3D3D3; text-decoration: none;">YouTube</a>
+            </div>
+              
+              
+            <div style="flex: 1; margin: 10px;">
+                <h4>Other Links</h4>
+                <a href="https://www.linkedin.com/in/mohammad-jishan-4361972ba/" target="blank" style="color: #D3D3D3; text-decoration: none;">LinkedIn</a><br>
+                <a href="https://x.com/zeesuroyalist" target="blank" style="color: #D3D3D3; text-decoration: none;">Twitter</a><br>
+                <a href="https://zeesuroyalist.weebly.com" target="blank" style="color: #D3D3D3; text-decoration: none;">Other Websites</a>
+            </div>
+        </div>
+              
+        <p style="margin-top: 20px;">&copy; 2024 Zeesu Mart. All Rights Reserved.</p>
+        <a href="mailto:example@example.com" target="blank" >rzeesu@gamil.com</a>
+
+    </footer>
+
+</body>
+</html>
